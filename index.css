@@ -71,9 +71,9 @@ nav {
     display: flex;
 }
 
-main {
+/* main {
     margin-bottom: 84px;
-}
+} */
 
 footer {
     background-color: #161616;
@@ -118,14 +118,18 @@ footer {
 /*** HOME PAGE ***/
 .home-container {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-        url("./assets/images/home-hero.png") no-repeat center center;
+        url("./src/assets/images/home-hero.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 350px;
+    min-height: 100vh;
     color: white;
     padding: 45px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-container h1 {
@@ -144,7 +148,7 @@ footer {
     text-decoration: none;
     background-color: #ff8c38;
     border: none;
-    width: 100%;
+    width: 50%;
     margin-top: 27px;
     padding-block: 0.75rem;
     color: white;
